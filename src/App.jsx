@@ -1,4 +1,8 @@
+import heroImage from "./assets/hero.jpg";
+
 function App() {
+
+  
   const services = [
     "Network Installations",
     "Wi-Fi Solutions",
@@ -52,9 +56,19 @@ function App() {
       </nav>
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center px-6">
+      <section
+  className="min-h-screen flex items-center justify-center px-6 relative overflow-hidden"
+  style={{
+  backgroundImage: `url(${heroImage})`,
+  backgroundSize: "110%",
+  backgroundPosition: "0% center",
+}}
+>
+  <div className="absolute inset-0 bg-slate-950/85"></div>
 
-        <div className="text-center max-w-4xl">
+
+
+        <div className="relative z-10 text-center max-w-4xl">
 
           <p className="uppercase tracking-widest text-orange-500 mb-4">
             TELECOM • INFRASTRUCTURE • FIELD ENGINEERING
@@ -68,21 +82,25 @@ function App() {
             Telecom.
           </h1>
 
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
-            Delivering network infrastructure support,
-            preventative maintenance, fibre solutions,
-            technical field services and telecom support
-            across South Africa.
-          </p>
+          <p className="text-slate-300 text-lg max-w-3xl mx-auto mb-10">
+  Delivering telecom infrastructure, network support,
+  preventative maintenance and technical field engineering
+  services across South Africa.
+</p>
 
-          <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-semibold">
-              Request a Quote
-            </button>
-
-            <button className="border border-slate-700 px-8 py-4 rounded-lg">
-              Contact Us
-            </button>
+          <div className="flex gap-6 justify-center mt-8">
+            <a
+  href="#contact"
+  className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-semibold inline-block"
+>
+  Request a Quote
+</a>
+            <a
+  href="#contact"
+  className="border border-slate-700 px-8 py-4 rounded-lg inline-block"
+>
+  Contact Us
+</a>
           </div>
 
         </div>
@@ -228,7 +246,7 @@ function App() {
   </h3>
 
   <p className="mb-4">
-    Founder & Technical Lead
+    Co-Founder & Technical Lead
   </p>
 
   <ul className="text-slate-400 space-y-2">
@@ -282,10 +300,10 @@ function App() {
           </h2>
 
           <div className="space-y-4 text-lg">
-            <p>📞 YOUR PHONE NUMBER</p>
+            <p>📞 083 500 5514</p>
             <p>📧 YOUR EMAIL ADDRESS</p>
-            <p>💬 YOUR WHATSAPP NUMBER</p>
-            <p>📍 Johannesburg, South Africa</p>
+            <p>💬 067 730 5958</p>
+            <p>📍 Pretoria, South Africa</p>
           </div>
 
         </div>
