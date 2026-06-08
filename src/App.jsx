@@ -1,17 +1,19 @@
 import heroImage from "./assets/hero.jpg";
+import logo from "./assets/logo.svg";
+
 
 function App() {
 
   
-  const services = [
-    "Network Installations",
-    "Wi-Fi Solutions",
-    "Fibre & Telecom Support",
-    "CCTV Installations",
+  const services = [ 
     "Preventative Site Maintenance",
     "Field Technical Support",
+    "Supply & Deployment Solutions",
+    "CCTV Installations",
     "Network Site Audits",
     "Drive Testing Support",
+    "Network Installations",
+    "Fibre & Telecom Support",
   ];
 
   const industries = [
@@ -41,9 +43,15 @@ function App() {
       <nav className="fixed top-0 w-full bg-slate-950/90 backdrop-blur border-b border-slate-800 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-          <h2 className="font-bold text-xl text-orange-500">
-            Bro's Technical Services
-          </h2>
+          <div className="flex items-center gap-3">
+  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
+    <span className="font-bold text-black text-xl">BTS</span>
+  </div>
+
+ <span className="text-orange-500 font-semibold text-xl tracking-wide">
+  Beacon Technical Services
+</span>
+</div>
 
           <div className="hidden md:flex gap-8 text-slate-300">
             <a href="#services">Services</a>
@@ -84,8 +92,8 @@ function App() {
 
           <p className="text-slate-300 text-lg max-w-3xl mx-auto mb-10">
   Delivering telecom infrastructure, network support,
-  preventative maintenance and technical field engineering
-  services across South Africa.
+technical field engineering, preventative maintenance
+and equipment supply solutions across South Africa.
 </p>
 
           <div className="flex gap-6 justify-center mt-8">
@@ -203,10 +211,9 @@ function App() {
           </h2>
 
           <p className="text-slate-400 text-lg leading-relaxed">
-  Bro's Technical Services delivers telecom,
-  network infrastructure, fibre, CCTV and
-  technical maintenance solutions across
-  South Africa.
+  Beacon Technical Services delivers telecom, 
+  network infrastructure, fibre, CCTV and 
+  technical maintenance solutions across South Africa.
 
   <br />
   <br />
@@ -220,10 +227,26 @@ function App() {
   <br />
   <br />
 
-  With backgrounds spanning telecommunications
-  and engineering environments, we are committed
-  to delivering reliable, professional and
-  technically sound solutions for our clients.
+  Our experience includes telecom infrastructure support, 
+IP network maintenance, preventative site maintenance, 
+fibre support services, field engineering operations, 
+CCTV installations, technical site audits and drive testing support.
+
+<br/>
+<br/>
+In addition to our technical services, we provide sourcing, 
+supply, deployment and support of telecommunications, 
+network, fibre, CCTV and infrastructure equipment to 
+meet client requirements. We can support projects on a supply-only 
+basis or as part of a complete supply, installation and 
+maintenance solution.
+
+<br/>
+<br/>
+With backgrounds spanning telecommunications and 
+engineering environments, we are committed to 
+delivering reliable, professional and technically 
+sound solutions for our clients.
 </p>
 
         </div>
@@ -274,7 +297,7 @@ function App() {
     <li>• Master's Degree in Engineering</li>
     <li>• Professional Engineer (Pr Eng)</li>
     <li>• Former Telecom Infrastructure Engineer</li>
-    <li>• Eskom Engineering Experience</li>
+    <li>• Engineering Experience</li>
     <li>• Field Engineering Operations</li>
     <li>• Network Infrastructure Support</li>
     <li>• Preventative Maintenance</li>
@@ -311,7 +334,7 @@ function App() {
 
       {/* FOOTER */}
       <footer className="bg-black py-8 text-center text-slate-400">
-        © 2026 Bro's Technical Services. All Rights Reserved.
+        © 2026 Beacon Technical Services. All Rights Reserved.
       </footer>
 
     </div>
