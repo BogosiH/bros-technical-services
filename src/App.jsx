@@ -1,5 +1,4 @@
 import heroImage from "./assets/hero.jpg";
-import logo from "./assets/logo.svg";
 
 
 function App() {
@@ -48,7 +47,7 @@ function App() {
     <span className="font-bold text-black text-xl">BTS</span>
   </div>
 
- <span className="text-orange-500 font-semibold text-xl tracking-wide">
+ <span className="text-orange-500 font-semibold text-sm md:text-xl tracking-wide">
   Beacon Technical Services
 </span>
 </div>
@@ -78,11 +77,11 @@ function App() {
 
         <div className="relative z-10 text-center max-w-4xl">
 
-          <p className="uppercase tracking-widest text-orange-500 mb-4">
+          <p className="uppercase tracking-wider md:tracking-widest text-orange-500 text-xs md:text-base mb-4">
             TELECOM • INFRASTRUCTURE • FIELD ENGINEERING
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6">
             Infrastructure.
             <br />
             Networks.
@@ -90,13 +89,13 @@ function App() {
             Telecom.
           </h1>
 
-          <p className="text-slate-300 text-lg max-w-3xl mx-auto mb-10">
+          <p className="text-slate-300 text-base md:text-lg max-w-3xl mx-auto mb-10 px-2">
   Delivering telecom infrastructure, network support,
 technical field engineering, preventative maintenance
 and equipment supply solutions across South Africa.
 </p>
 
-          <div className="flex gap-6 justify-center mt-8">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mt-8">
             <a
   href="#contact"
   className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-lg font-semibold inline-block"
